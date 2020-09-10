@@ -3,22 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>SURVEY</title>
 </head>
 <body>
-    <h1 id="title">After dinner event survey</h1>
-    <p id="discription">Thank you for attending the dinner event today. If you got a few minutes to answer some questions, so I can gauge your experience to see if there is any theing to add are chang, or keep on:-D. That would be much appreciated, thank you!</p>
-    <form action="" id="survey-from">
-        <!-- name -->
-        <label for="name"> Full Name</label>
-        <input type="text" id="name" name="user_name"><br>
-        <!--email -->
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="user_email"><br>
-        <!-- number -->
-        <label for="number">Phone Number</label>
-        <input type="number" id="number" name="user_number" pattern="[0-9] {10}">
-
-    </form>
+    <section class="container">
+        <header class="header">
+            <h1 id="title">
+                Onjeni Ya Kenya Survey Form
+            </h1>
+            <p id="description" class="description text-center">
+                Thank you for taking the time to help us improve our Dinner-Event
+            </p>
+        </header>
+        <form action="" id="survey-from">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Full Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">E-Mail</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="user_email" placeholder="Your E-Mail..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phoneNumber">Phone Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="phoneNumber" id="phoneNumber" name="user_number" placeholder="Your phone number..">
+                </div>
+            </div>
+            <!-- questionnaire section -->
+            <div class="qusetionClearflx">
+                <!-- first question -->
+                <div class="qusetion-row clearflx">
+                    <p id="qusetion-title">
+                        What is your level of satisfaction for this event?
+                    </p>
+                    <label class="box" for="answer1">
+                        <input type="checkbox" id="answer1" class="regular-checkbox" class="checkbox1" value="answer" name="satisfaction">
+                        <span class="checkmark"></span>
+                        Very satisfied
+                    </label>
+                    <label class="box" for="answer2">
+                        <input type="checkbox" id="answer2" class="regular-checkbox" class="checkbox1" value="answer" name="satisfaction">
+                        <span class="checkmark"></span>
+                        Satisfied
+                    </label>
+                    <label class="box" for="answer3">
+                        <input type="checkbox" id="answer3" class="regular-checkbox" class="checkbox1" value="answer" name="satisfaction">
+                        <span class="checkmark"></span>
+                        OK
+                    </label>
+                    <label class="box" for="answer4">
+                        <input type="checkbox" id="answer4" class="regular-checkbox" class="checkbox1" value="answer" name="satisfaction">
+                        <span class="checkmark"></span>
+                        Disatisfied
+                    </label>
+                    <label class="box" for="answer5">
+                        <input type="checkbox" id="answer5" class="regular-checkbox" class="checkbox1" value="answer" name="satisfaction">
+                        <span class="checkmark"></span>
+                        Very disatisfied
+                    </label>
+                </div>
+                <!-- second question checkbox -->
+                <div class="qusetionClearflx">
+                    <p>The waiting time was:</p>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio1" value="answer">
+                        Much shorter than I expected
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio1" value="answer">
+                        About what I expected
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio1" value="answer">
+                        Much longer than I expected
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio1" value="answer">
+                        There was no waiting time
+                    </label>
+                </div>
+                <!-- Third question radio -->
+                <div class="qusetionClearflx">
+                    <p>Which elements of the event did you like most?</p>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio2" value="answer">
+                        The venue
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio2" value="answer">
+                        The décor
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio2" value="answer">
+                        The space
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio2" value="answer">
+                        The community
+                    </label>
+                </div>
+                <!-- Fourth question radio -->
+                <div class="qusetionClearflx">
+                    <p>How would you rate the food quality?</p>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio3" value="answer">
+                        Excellent
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio3" value="answer">
+                        Very good
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio3" value="answer">
+                        Good
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio3" value="answer">
+                        Poor
+                    </label>
+                </div>
+                <!-- Fifth question radio -->
+                <div class="qusetionClearflx">
+                    <p>How would you reat the service?</p>
+                    <label for="anwser">
+                        <input type="radio" id="rate" class="regular-radio" class="radio4" value="answer">
+                        Excellent
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio4" value="answer">
+                        Very good
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio4" value="answer">
+                        Good
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio4" value="answer">
+                        Poor
+                    </label>
+                </div>
+                <!-- Six question open answer -->
+                <div class="qusetionClearflx">
+                    <p>Are you likely to participate in one of our events in the future?</p>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio5" value="answer">
+                        Extremely likely
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio5" value="answer">
+                        Very likely
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio5" value="answer">
+                        Somewhat likely
+                    </label>
+                    <label for="anwser">
+                        <input type="radio" id="answer" class="regular-radio" class="radio5" value="answer">
+                        Not at all likely
+                    </label>
+                </div>
+                <!-- Seventh question video -->
+                <div class="qusetionClearflx">
+                    <p>How likely are you to tell family and friends about this event?</p>
+                </div>
+                <div class="box">
+                <!-- Not at all likely/Extremely likely -->
+                    <div class="rateMe">
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            0
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            1
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            2
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            3
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            4
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            5
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            6
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            7
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            8
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            9
+                        </label>
+                        <input type="radio" id="answer" class="regular-radio" class="radio6" value="answer">
+                        <label for="reat1">
+                            10
+                        </label>
+                    </div>
+                </div>
+            
+                <!-- Eighth question radio -->
+                <div class="qusetionClearflx">
+                    <p>What, if anything, did you dislike about this event?</p>
+                    <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comment here..."
+                    ></textarea>
+                </div>
+                <!-- Ninth question radio -->
+                <div class="qusetionClearflx">
+                    <p>Do you have any other comments, questions, or concerns?</p>
+                    <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comment here..."
+                    ></textarea>
+                </div>
+                <div class="qusetionClearflx">
+                    <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+                </div>
+            </div>
+    
+        </form>
+    </section>
 </body>
 </html>
